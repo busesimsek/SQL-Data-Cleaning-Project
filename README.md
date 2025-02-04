@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/e276ca89-fac1-4050-ba87-ee399b8519c2)
+![image](https://github.com/user-attachments/assets/e116911f-c252-4851-a0e2-6b45400a3387)
+
 # Data Cleaning for 2022 Layoffs
 
 ## Table of Contents
