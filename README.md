@@ -1,9 +1,29 @@
 ![image](https://github.com/user-attachments/assets/e276ca89-fac1-4050-ba87-ee399b8519c2)
 # Data Cleaning for 2022 Layoffs
 
-**Author:** Buse Şimşek  
-**Date:** November 27, 2024  
-**Tools:** MySQL  
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Dataset](#dataset)
+   - [Original Dataset](#original-dataset)
+   - [Raw Data](#raw-data)
+   - [Cleaned Data](#cleaned-data)
+3. [Tools](#tools)
+4. [Objectives](#objectives)
+5. [Data Cleaning Process](#data-cleaning-process)
+   - [Importing the Raw Data](#importing-the-raw-data)
+   - [Removing Duplicates](#removing-duplicates)
+   - [Standardizing Data](#standardizing-data)
+   - [Handling Null Values](#handling-null-values)
+   - [Final Cleaned Dataset](#final-cleaned-dataset)
+6. [How to Use](#how-to-use)
+   - [Prerequisites](#prerequisites)
+   - [Steps to Run](#steps-to-run)
+7. [Contributions](#contributions)
+8. [Future Improvements](#future-improvements)
+9. [Contact](#contact)
+
+---
 
 ## Overview
 
@@ -14,6 +34,14 @@ This project focuses on cleaning and preparing a dataset of layoffs in 2022 for 
 - **Original Dataset:** [Layoffs 2022 Dataset on Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 - **Raw Data:** [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json) (imported into MySQL)
 - **Cleaned Data:** [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) (final output after cleaning)
+
+---
+
+## Tools
+
+- **SQL**: Used for data processing, transformation, and scripting tasks within MySQL.
+- **Database Management System**: MySQL to host, manage, and manipulate the dataset.
+- **Data Cleaning Tools**: SQL for handling missing values, removing duplicates, and standardizing data formats.
 
 ---
 
