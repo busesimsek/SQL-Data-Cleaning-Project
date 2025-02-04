@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/e276ca89-fac1-4050-ba87-ee399b8519c2)
 # Data Cleaning for 2022 Layoffs
 
 **Author:** Buse Şimşek  
@@ -11,7 +12,7 @@ This project focuses on cleaning and preparing a dataset of layoffs in 2022 for 
 ### Dataset
 
 - **Original Dataset:** [Layoffs 2022 Dataset on Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
-- **Raw Data:** [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json)(imported into MySQL)
+- **Raw Data:** [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json) (imported into MySQL)
 - **Cleaned Data:** [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) (final output after cleaning)
 
 ---
