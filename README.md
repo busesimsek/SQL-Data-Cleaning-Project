@@ -6,9 +6,6 @@
 
 1. [Overview](#overview)
 2. [Dataset](#dataset)
-   - [Original Dataset](#original-dataset)
-   - [Raw Data](#raw-data)
-   - [Cleaned Data](#cleaned-data)
 3. [Tools](#tools)
 4. [Objectives](#objectives)
 5. [Data Cleaning Process](#data-cleaning-process)
@@ -59,26 +56,26 @@ This project focuses on cleaning and preparing a dataset of layoffs in 2022 for 
 
 The data cleaning was done in multiple phases, as outlined below:
 
-### 1. **Importing the Raw Data**
+### Importing the Raw Data
 - The raw data was first imported into a MySQL table `layoffs` from [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json). The original dataset contained 3887 rows.
 
-### 2. **Removing Duplicates**
+### Removing Duplicates
 - A staging table `layoffs_staging` was created to preserve the original data. Using the `ROW_NUMBER()` function, duplicates were identified and removed based on specific columns (company, location, total laid off, etc.).
 - Two duplicates were identified for 'Beyond Meat' and 'Cazoo' and were successfully removed.
 - After removing duplicates, the dataset contained 3885 rows.
 
-### 3. **Standardizing Data**
+### Standardizing Data
 - **Whitespace Cleanup:** Removed extra spaces from text columns (e.g., `company`).
 - **Misspelled Locations:** Corrected common misspellings in the `location` column (e.g., "Ferdericton" → "Fredericton").
 - **Country Standardization:** Unified variations of country names (e.g., "UAE" → "United Arab Emirates").
 - **Date Formatting:** Converted the `date` column from text to the proper `DATE` type.
 - **Numeric Conversions:** Converted the `total_laid_off` and `funds_raised` columns from text to integers, rounding where necessary.
 
-### 4. **Handling Null Values**
+### Handling Null Values
 - Null values in key columns (`industry`, `total_laid_off`, `percentage_laid_off`) were handled by replacing empty strings with NULL values.
 - Empty rows, where both `total_laid_off` and `percentage_laid_off` were NULL, were removed. This reduced the dataset size to 3248 rows.
 
-### 5. **Final Cleaned Dataset**
+### Final Cleaned Dataset
 - The final cleaned dataset, now with standardized data, was exported to [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) for further use in analysis.
 
 ---
