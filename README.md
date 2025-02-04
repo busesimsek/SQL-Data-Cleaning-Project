@@ -11,8 +11,8 @@ This project focuses on cleaning and preparing a dataset of layoffs in 2022 for 
 ### Dataset
 
 - **Original Dataset:** [Layoffs 2022 Dataset on Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
-- **Raw Data:** `raw_data.csv` (imported into MySQL)
-- **Cleaned Data:** `final_cleaned_data.csv` (final output after cleaning)
+- **Raw Data:** [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json)(imported into MySQL)
+- **Cleaned Data:** [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) (final output after cleaning)
 
 ---
 
@@ -30,7 +30,7 @@ This project focuses on cleaning and preparing a dataset of layoffs in 2022 for 
 The data cleaning was done in multiple phases, as outlined below:
 
 ### 1. **Importing the Raw Data**
-- The raw data was first imported into a MySQL table `layoffs` from `raw_data.csv`. The original dataset contained 3887 rows.
+- The raw data was first imported into a MySQL table `layoffs` from [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json). The original dataset contained 3887 rows.
 
 ### 2. **Removing Duplicates**
 - A staging table `layoffs_staging` was created to preserve the original data. Using the `ROW_NUMBER()` function, duplicates were identified and removed based on specific columns (company, location, total laid off, etc.).
@@ -49,7 +49,7 @@ The data cleaning was done in multiple phases, as outlined below:
 - Empty rows, where both `total_laid_off` and `percentage_laid_off` were NULL, were removed. This reduced the dataset size to 3248 rows.
 
 ### 5. **Final Cleaned Dataset**
-- The final cleaned dataset, now with standardized data, was exported to `final_cleaned_data.csv` for further use in analysis.
+- The final cleaned dataset, now with standardized data, was exported to [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) for further use in analysis.
 
 ---
 
@@ -57,11 +57,11 @@ The data cleaning was done in multiple phases, as outlined below:
 
 ### Prerequisites
 1. MySQL or any compatible database system.
-2. The dataset files (`layoffs.json`, `raw_data.csv`, `Data Cleaning for 2022 Layoffs.sql`, and `final_cleaned_data.csv`).
+2. The dataset files ([layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json), [layoffs.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.csv), [Data Cleaning for 2022 Layoffs.sql](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Data%20Cleaning%20for%202022%20Layoffs.sql), and [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv)).
 
 ### Steps to Run
 1. **Set up the MySQL database:**
-   - Import `raw_data.csv` into the MySQL database using the provided SQL script.
+   - Import `layoffs.json` into the MySQL database using the provided SQL script.
    - Create necessary tables (`layoffs`, `layoffs_staging`, `layoffs_staging2`).
 
 2. **Execute the Cleaning SQL Script:**
