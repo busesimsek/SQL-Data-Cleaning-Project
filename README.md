@@ -29,7 +29,7 @@ This project focuses on cleaning and preparing a dataset of layoffs for further 
 
 ### Dataset
 
-- **Original Dataset:** [Layoffs 2022 Dataset on Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
+- **Original Dataset:** [Layoffs Dataset on Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 - **Raw Data:** [layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json) (imported into MySQL)
 - **Cleaned Data:** [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv) (final output after cleaning)
 
@@ -84,7 +84,7 @@ The data cleaning was done in multiple phases, as outlined below:
 
 ### Prerequisites
 1. MySQL or any compatible database system.
-2. The dataset files ([layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json), [layoffs.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.csv), [Data Cleaning for 2022 Layoffs.sql](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Data%20Cleaning%20for%202022%20Layoffs.sql), and [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv)).
+2. The dataset files ([layoffs.json](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.json), [layoffs.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Dataset/layoffs.csv), [Data Cleaning for Layoffs.sql](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/Data%20Cleaning%20for%20Layoffs.sql), and [final_cleaned_data.csv](https://github.com/busesimsek/SQL-Data-Cleaning-Project/blob/main/final_cleaned_data.csv)).
 
 ### Steps to Run
 1. **Set up the MySQL database:**
@@ -92,7 +92,7 @@ The data cleaning was done in multiple phases, as outlined below:
    - Create necessary tables (`layoffs`, `layoffs_staging`, `layoffs_staging2`).
 
 2. **Execute the Cleaning SQL Script:**
-   - Run the `Data Cleaning for 2022 Layoffs.sql` script to perform the data cleaning steps. This script includes commands for:
+   - Run the `Data Cleaning for Layoffs.sql` script to perform the data cleaning steps. This script includes commands for:
      - Removing duplicates.
      - Standardizing data formats.
      - Handling missing values.
