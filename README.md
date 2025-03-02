@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/e116911f-c252-4851-a0e2-6b45400a3387)
 
-# Data Cleaning for 2022 Layoffs
+# Data Cleaning for Layoffs
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@
 
 ## Overview
 
-This project focuses on cleaning and preparing a dataset of layoffs in 2022 for further analysis. The dataset, originally from Kaggle, was imported into MySQL, cleaned, and standardized to ensure consistency and accuracy for potential analysis.
+This project focuses on cleaning and preparing a dataset of layoffs for further analysis. The dataset, originally from Kaggle, was imported into MySQL, cleaned, and standardized to ensure consistency and accuracy for potential analysis.
 
 ### Dataset
 
